@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="authorization_block">
+        <div class="authorization_head">
+            <button class="go_back_div" onclick="goBack()">&#10148;</button>
+            <span>Авторизация</span>
+        </div>
+        <div class="authorization_form_block">
+            <form action="" class="authorization_form">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <span class="error-message hidden" id="generalError"></span> 
+                <button class="authorization_btn">
+                    <span>Вход</span>
+                </button>
+            </form>
+
+            <hr>
+            <span class="authorization_or">ИЛИ</span>
+            <hr>
+            <div class="auth_perehod">
+                <a href="../registration/index.html" class="auth_login_link">
+                    Регистрация
+                </a>
+            </div>
+
+            <!-- Сообщение об ошибке -->
+            <p id="errorMessage" style="color: red;"></p>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel=”icon” href=”/favicon.ico” type=”image/x-icon”>
+    <title>Document</title>
+</head>
+<body>
+    <div class="registration_block">
+        <div class="registration_head">
+            <button class="go_back_div" onclick="goBackx2()">&#10148;</button>
+            <span>Регистрация</span>
+        </div>
+        <div class="registration_form_block" id="registrationForm">
+            <form action="" class="registration_form">
+                <input type="email" placeholder="Email" id="email">
+                <input type="text" placeholder="Имя пользователя" id="login">
+                <input type="password" placeholder="Пароль" id="password">
+                <input type="password" placeholder="Повторите пароль" id="confirmPassword">
+                <span id="errorMessage"></span>
+                <span class="error-message hidden" id="generalError"></span> 
+                <button class="registration_btn" type="submit">
+                    <span>Регистрация</span>
+                </button>
+            </form>
+
+            <hr>
+            <span class="registration_or">ИЛИ</span>
+            <hr>
+            <button class="reg_perehod" onclick="goBack()">
+                <span href="../authorization/index.html" class="reg_login_link">
+                    Вход
+                </span>
+            </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

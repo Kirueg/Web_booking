@@ -1,0 +1,262 @@
+html, body { 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: relative;
+    width: auto;
+    height: 80px;
+    background-color: #21219a;
+    box-shadow: 0px -4px 7px rgba(67, 67, 67, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background-color: #21219a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__logo {
+    font-size: 30px;
+    line-height: 29px;
+    margin-left: 100px;
+    margin-right: 30px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu__ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__li {
+    margin: 0 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.menu__link:hover {
+    color: #00bcd4;
+}
+
+.menu__login {
+    margin-right: 60px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Exo 2', sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.menu__login:hover {
+    color: #00bcd4;
+}
+
+.footer {
+    background-color: #21219a; /* Темно-синий фон */
+    padding: 30px 0; /* Увеличенный отступ сверху и снизу */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px -4px 7px rgba(67, 67, 67, 0.25); /* Тень снизу */
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение секций */
+    flex-wrap: wrap; /* Перенос секций на новую строку при необходимости */
+    max-width: 1200px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование */
+    color: whitesmoke; /* Белый текст */
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Отступ между секциями */
+    flex: 1 1 25%; /* Равномерное распределение секций */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px; /* Отступ под заголовком */
+    color: #ffffff; /* Белый цвет заголовков */
+}
+
+.footer-section p, .footer-section a {
+    color: whitesmoke; /* Белый текст */
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px 0;
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.footer-section a:hover {
+    color: #00bcd4; /* Голубой цвет при наведении */
+}
+
+.social-links, .useful-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li, .useful-links li {
+    margin: 5px 0;
+}
+
+.social-links a:hover, .useful-links a:hover {
+    color: #00bcd4; /* Голубой цвет при наведении */
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Отступ сверху */
+    padding-top: 10px; /* Отступ сверху */
+    color: whitesmoke; /* Белый текст */
+    font-size: 14px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Карточка путевки */
+.tour-card {
+    display: flex;
+    max-width: 1200px; /* Увеличиваем ширину для лучшего отображения */
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Картинка слева */
+.tour-card__image {
+    flex: 1; /* Картинка занимает 1 часть ширины */
+    max-width: 400px; /* Фиксированная ширина для картинки */
+}
+
+.tour-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабируем картинку, чтобы она заполнила контейнер */
+}
+
+/* Контент справа */
+.tour-card__content {
+    flex: 2; /* Контент занимает 2 части ширины */
+    padding: 20px;
+    text-align: left; /* Выравниваем текст по левому краю */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяем элементы по вертикали */
+}
+
+.tour-card__title {
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    color: #21219a;
+    margin-bottom: 15px;
+}
+
+.tour-card__description {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tour-card__details {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tour-card__details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.tour-card__button {
+    background-color: #21219a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Кнопка выравнивается по левому краю */
+}
+
+.tour-card__button:hover {
+    background-color: #00bcd4;
+}
+
+/* Стили для кнопки "Корзина" */
+.menu__cart {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* Белый цвет текста */
+    font-size: 20px;
+    margin-left: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu__cart:hover {
+    color: #00bcd4; /* Голубой цвет при наведении */
+}
+
+.cart-icon {
+    font-size: 24px; /* Увеличиваем размер иконки */
+    margin-right: 40px;
+}
+
+/* Стили для счетчика товаров в корзине */
+.cart-count {
+    background-color: #ff5722; /* Оранжевый цвет */
+    color: #ffffff; /* Белый текст */
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 50%; /* Круглая форма */
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    margin-right: 20px;
+    margin-top: 25px;
+}

@@ -1,0 +1,151 @@
+body{
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+.authorization_block{
+    background-color: #21219a;
+    width: 400px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.authorization_head{
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.authorization_head span{
+    color: white;
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.authorization_form_block input{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.authorization_btn{
+    box-sizing: border-box;
+    border: 0; 
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+.go_back_div{
+    color: white;
+    background-color: #21219a;
+    border: 0;
+    transform: scaleX(-1);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 22px;
+    top: 25px;
+}
+.go_back_div a{
+    color: white;
+    text-decoration: none;
+}
+.go_back_div a:hover{
+    color: #ffffffbe;
+}
+.authorization_block button:hover{
+    cursor: pointer;
+}
+.authorization_btn:hover{
+    background-color: #7575eb;
+}
+button:hover{
+    cursor: pointer;
+}
+hr{
+    display: inline-block;
+    width: 155px;
+    margin-top: 15px;
+}
+.authorization_or{
+    color: white;
+}
+.auth_perehod{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+.auth_perehod:hover{
+    background-color: #7575eb;
+}
+.auth_login_link{
+    line-height: 40px; 
+    text-decoration: none;
+    color: #000000;
+    height: 40px;
+    width: 360px;
+    margin: 0;
+}
+
+.error-message {
+    color: whitesmoke;
+    background-color: rgba(255, 0, 0, 0.39);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px; /* Закругление границ */
+    margin-bottom: 10px;
+    display: block;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.error-message.hidden {
+    display: none;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

@@ -1,0 +1,279 @@
+html, body { 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: relative;
+    width: auto;
+    height: 80px;
+    background-color: #21219a;
+    box-shadow: 0px -4px 7px rgba(67, 67, 67, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background-color: #21219a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__logo {
+    font-size: 30px;
+    line-height: 29px;
+    margin-left: 100px;
+    margin-right: 30px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu__ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__li {
+    margin: 0 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.menu__link:hover {
+    color: #00bcd4;
+}
+
+.menu__login {
+    margin-right: 60px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Exo 2', sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.menu__login:hover {
+    color: #00bcd4;
+}
+
+.footer {
+    background-color: #21219a; /* Темно-синий фон */
+    padding: 30px 0; /* Увеличенный отступ сверху и снизу */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px -4px 7px rgba(67, 67, 67, 0.25); /* Тень снизу */
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение секций */
+    flex-wrap: wrap; /* Перенос секций на новую строку при необходимости */
+    max-width: 1200px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование */
+    color: whitesmoke; /* Белый текст */
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Отступ между секциями */
+    flex: 1 1 25%; /* Равномерное распределение секций */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px; /* Отступ под заголовком */
+    color: #ffffff; /* Белый цвет заголовков */
+}
+
+.footer-section p, .footer-section a {
+    color: whitesmoke; /* Белый текст */
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px 0;
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.footer-section a:hover {
+    color: #00bcd4; /* Голубой цвет при наведении */
+}
+
+.social-links, .useful-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li, .useful-links li {
+    margin: 5px 0;
+}
+
+.social-links a:hover, .useful-links a:hover {
+    color: #00bcd4; /* Голубой цвет при наведении */
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Отступ сверху */
+    padding-top: 10px; /* Отступ сверху */
+    color: whitesmoke; /* Белый текст */
+    font-size: 14px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Основной контейнер */
+main {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+/* Контейнер для контента */
+.content {
+    display: flex;
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    max-width: 800px; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #21219a; /* Белый фон */
+}
+
+/* Контейнер для изображения */
+.preview {
+    flex: 1; /* Занимает 1 часть пространства */
+    margin-right: 20px; /* Отступ между изображением и полями ввода */
+    width: 400px; /* Увеличенный размер карточки */
+    height: 200px;
+    overflow: hidden; /* Скрываем содержимое, выходящее за пределы контейнера */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Изображение */
+.preview img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: 100%; /* Изображение занимает всю высоту контейнера */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно заполнило контейнер */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.data {
+    flex: 2; /* Занимает 2 части пространства */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Убедитесь, что .data занимает всю доступную ширину */
+}
+
+.textarea {
+    background-color: #f5f5f5; /* Светло-серый фон */
+    color: #21219a; /* Темно-синий текст */
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px; /* Отступ между textarea */
+    width: 100%; /* Занимает всю доступную ширину */
+    resize: vertical; /* Позволяет расширяться только по вертикали */
+    box-sizing: border-box; /* Убедитесь, что padding и border включены в ширину */
+    border: 1px solid black; /* Темно-синий бордер */
+}
+
+.input {
+    margin-bottom: 10px; /* Отступ между input и textarea */
+    padding: 10px;
+    border: 2px solid black; /* Темно-синий бордер */
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Светло-серый фон */
+    color: black; /* Темно-синий текст */
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.add_ava {
+    margin-bottom: 10px; /* Отступ между input и textarea */
+    height: 30px;
+    appearance: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f5f5f5; /* Светло-серый фон */
+    border: 2px solid black; /* Темно-синий бордер */
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+    color: black; /* Темно-синий текст */
+    width: 500px;
+}
+
+.button {
+    background-color: whitesmoke; /* Темно-синий фон */
+    font-family: 'Exo 2', sans-serif;
+    border: none;
+    color: black; /* Белый текст */
+    font-size: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #00bcd4; /* Голубой фон при наведении */
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="my.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <a class="menu__logo" href="../main_page/index.html">NORTRAVEL</a>
+            <ul class="menu__ul">
+                <li class="menu__li"><a class="menu__link" href="../main_page/index.html">Главное</a></li>
+                <li class="menu__li"><a class="menu__link" href="my.html">Добавить</a></li>
+            </ul>
+            <a class="menu__login" id="enter_lks" href="../authorization/index.html">Войти</a>
+    </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="preview">
+                <img id="preview_ava" src="https://avatars.mds.yandex.net/i?id=54b828bc325102b8b66ac1510bd9762c_l-13468156-images-thumbs&n=13" alt="Предпросмотр фото">
+            </div>
+            <div class="data">
+                <form id="tripForm">
+                    <input class="input" type="text" id="tripTitle" name="tripTitle" placeholder="Название путевки">
+                    <input class="input" type="text" id="tripStartDate" name="tripStartDate" placeholder="Дата начала путевки">
+                    <input class="input" type="text" id="tripEndDate" name="tripEndDate" placeholder="Дата конца путевки">
+                    <input class="input" type="text" id="tripPrice" name="tripPrice" placeholder="Цена путевки">
+                    <textarea class="textarea" id="tripDescription" name="tripDescription" placeholder="Описание путевки"></textarea>
+                    <input type="file" class="add_ava" id="fileInput" name="image" accept="image/*">
+                    <button class="button" type="button" id="submitButton">Добавить путевку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@nortravel.com</p>
+                <p>Телефон: +7 (495) 456-78-90</p>
+                <p>Адрес: ул. Бауманская, 5, г. Москва, Россия</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Полезные ссылки</h3>
+                <ul class="useful-links">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NORTRAVEL. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    

@@ -1,0 +1,201 @@
+body {
+    background-color: #ffffff; /* Белый фон */
+    font-family: sans-serif;
+}
+
+.registration_block, .authorization_block {
+    background-color: #21219a; /* Темно-синий фон */
+    width: 400px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+.registration_head, .authorization_head {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.registration_head span, .authorization_head span {
+    color: white; /* Белый текст */
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.registration_form_block input, .authorization_form_block input {
+    width: 100%;
+    margin: 0;
+    border: 2px solid #ffffff; /* Белый бордер */
+    box-sizing: border-box;
+    background-color: #ffffff; /* Белый фон */
+    color: #000000; /* Черный текст */
+    padding: 10px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: border-color 0.3s ease; /* Плавное изменение цвета бордера */
+}
+
+.registration_form_block input:focus, .authorization_form_block input:focus {
+    border-color: #7575eb; /* Синий бордер при фокусе */
+    outline: none;
+}
+
+.registration_btn, .authorization_btn {
+    box-sizing: border-box;
+    border: 0;
+    background-color: #ffffff; /* Белый фон */
+    color: #000000; /* Черный текст */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.registration_btn:hover, .authorization_btn:hover {
+    background-color: #7575eb; /* Синий фон при наведении */
+    cursor: pointer;
+}
+
+.go_back_div {
+    color: white; /* Белый текст */
+    background-color: #21219a; /* Темно-синий фон */
+    border: 0;
+    transform: scaleX(-1);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 22px;
+    top: 25px;
+    transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+.go_back_div:hover, .go_back_div a:hover {
+    color: #7575eb; /* Синий текст при наведении */
+}
+
+.go_back_div a {
+    color: white; /* Белый текст */
+    text-decoration: none;
+}
+
+.add_ava {
+    height: 55px !important;
+    appearance: none;
+    margin-top: 3px !important;
+}
+
+.add_ava_text {
+    color: white; /* Белый текст */
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+#preview_ava {
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+hr {
+    display: inline-block;
+    width: 155px;
+    margin-top: 15px;
+    border: 1px solid #ffffff; /* Белый бордер */
+}
+
+.registration_or, .authorization_or {
+    color: white; /* Белый текст */
+}
+
+.reg_perehod, .auth_perehod {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #ffffff; /* Белый бордер */
+    box-sizing: border-box;
+    background-color: #ffffff; /* Белый фон */
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.reg_perehod:hover, .auth_perehod:hover {
+    background-color: #7575eb; /* Синий фон при наведении */
+}
+
+.reg_login_link, .auth_login_link {
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000; /* Черный текст */
+    height: 40px;
+    width: 360px;
+    margin: 0;
+}
+
+#errorMessage {
+    color: white; /* Белый текст */
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: whitesmoke; /* Белый текст */
+    background-color: rgba(255, 0, 0, 0.39); /* Легкий красный фон */
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid red; /* Красный бордер */
+    border-radius: 5px; /* Закругление границ */
+    margin-bottom: 10px;
+    display: block;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.error-message.hidden {
+    display: none;
+}
+.error-message.hidden {
+    display: none;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

@@ -1,0 +1,25 @@
+CREATE TABLE trips (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    price TEXT NOT NULL,
+    description TEXT,
+    image_path TEXT NOT NULL
+);
+
+CREATE TABLE accounts (
+    id SERIAL PRIMARY KEY,
+    login VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE user_carts (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL, -- Связь с таблицей пользователей
+    trip_id INT NOT NULL, -- Связь с таблицей путевок
+    quantity INT NOT NULL DEFAULT 1, -- Количество путевок
+    FOREIGN KEY (user_id) REFERENCES accounts(id),
+    FOREIGN KEY (trip_id) REFERENCES trips(id)
+);
